@@ -30,6 +30,6 @@ sudo sed -i -re "s/([a-z]{2}.)?archive.ubuntu.com|security.ubuntu.com|old-releas
 
 # Update and install packages
 sudo apt update
-sudo apt install -y openssh-server git make
+sudo apt install -y openssh-server git make build-essential
 
 echo "Setup completed for Ubuntu $UBUNTU_VERSION"

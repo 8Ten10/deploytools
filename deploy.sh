@@ -32,4 +32,8 @@ sudo sed -i -re "s/([a-z]{2}.)?archive.ubuntu.com|security.ubuntu.com|old-releas
 sudo apt update
 sudo apt install -y openssh-server git make build-essential
 
-echo "Setup completed for Ubuntu $UBUNTU_VERSION"
+echo "Sources updated Correctly for Ubuntu $UBUNTU_VERSION"
+
+#Install mariadb & nginx + Dependencies
+sudo apt install -y mariadb-server nginx install python3-dev libmariadb-dev libmysqlclient-dev
+
